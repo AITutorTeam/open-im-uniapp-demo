@@ -1,6 +1,6 @@
 {
     "name" : "IM-UCB",
-    "appid" : "__UNI__60BFCE0",
+    "appid" : "__UNI__52A619E",
     "description" : "",
     "versionName" : "toc_base_open 3.3.4",
     "versionCode" : 334,
@@ -118,7 +118,7 @@
             "Tuoyun-OpenIMSDK" : {
                 "__plugin_info__" : {
                     "name" : "OpenIMSDK",
-                    "description" : "IM",
+                    "description" : "OpenIM SDK for uni-app advance v3.8.2",
                     "platforms" : "Android,iOS",
                     "url" : "",
                     "android_package_name" : "",

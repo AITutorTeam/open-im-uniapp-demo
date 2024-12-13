@@ -2,9 +2,9 @@
 // const apiUrl = 'https://xxx.com/api'
 // const registerUrl = 'https://xxx.com/chat'
 
-const wsUrl = 'ws://your-server-ip:10001'
-const apiUrl = 'http://your-server-ip:10002'
-const registerUrl = 'http://your-server-ip:10008'
+const wsUrl = 'ws://47.243.78.26:10001'
+const apiUrl = 'http://47.243.78.26:10002'
+const registerUrl = 'http://47.243.78.26:10008'
 
 const version = 'OpenCorp-Uni-Demo 3.8.2'
 
