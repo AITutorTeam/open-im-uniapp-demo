@@ -509,7 +509,9 @@ export default {
       // #endif
 			// #ifdef H5 || MP-WEIXIN
 			const IMToken = uni.getStorageSync("IMToken");
+			console.log("🚀 ~ h5 tryLogin ~ IMToken:", IMToken)
 			const IMUserID = uni.getStorageSync("IMUserID");
+			 console.log("🚀 ~ h5 tryLogin ~ IMUserID:", IMUserID)
 			 if (IMToken && IMUserID) {
 				IMSDK.asyncApi(IMSDK.IMMethods.Login, IMSDK.uuid(), {
 					userID: IMUserID,
@@ -536,6 +538,7 @@ export default {
 			// #ifdef APP-PLUS
       getDbDir()
         .then(async (path) => {
+          console.log("🚀 ~ getDbDir.then ~ path:", path)
           const flag = await IMSDK.asyncApi(IMMethods.InitSDK, IMSDK.uuid(), {
             platformID: uni.$u.os() === "ios" ? 1 : 2,
             apiAddr: config.getApiUrl(),
@@ -546,6 +549,7 @@ export default {
             isLogStandardOutput: true,
             isExternalExtensions: false,
           });
+          console.log("app.vue ~ flag ~ flag:", flag)
           if (!flag) {
             plus.navigator.closeSplashscreen();
             uni.$u.toast("初始化IMSDK失败！");
@@ -555,13 +559,16 @@ export default {
             IMSDK.IMMethods.GetLoginStatus,
             IMSDK.uuid(),
           );
+          console.log("🚀 ~ .then ~ status:", status)
           if (status === 3) {
             initStore();
             return;
           }
 
           const IMToken = uni.getStorageSync("IMToken");
+          console.log("🚀 ~ .then ~ IMToken:", IMToken)
           const IMUserID = uni.getStorageSync("IMUserID");
+          console.log("🚀 ~ .then ~ IMUserID:", IMUserID)
           if (IMToken && IMUserID) {
             IMSDK.asyncApi(IMSDK.IMMethods.Login, IMSDK.uuid(), {
               userID: IMUserID,
