@@ -191,6 +191,8 @@ export default {
             platform,
             verifyCode: this.loginInfo.verificationCode,
           });
+		  data.imToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiJVU0VSXzEzIiwiUGxhdGZvcm1JRCI6MCwiZXhwIjoxNzQxNzk1NjI1LCJuYmYiOjE3MzQwMTkzMjUsImlhdCI6MTczNDAxOTYyNX0.Iv_iAFmyu27PyBbl_jrT7IjqorvU7a2ENjnDRBUD-K4'
+		  data.userID = 'USER_13'
           const { imToken, userID } = data;
 
           // #ifdef H5 || MP-WEIXIN
