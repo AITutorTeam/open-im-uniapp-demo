@@ -10,9 +10,6 @@ package-lock.json
 .hbuilderx
 uniCloud-aliyun
 
-# plugin
-/nativeplugins
-
 
 # testing
 /coverage
@@ -40,6 +37,3 @@ yarn-error.log*
 
 # db
 OpenIM_*
-
-# plugin
-/nativeplugins

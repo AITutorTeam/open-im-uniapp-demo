@@ -1,0 +1,6 @@
+framework module OUIFilePicker {
+  umbrella header "OUIFilePicker.h"
+  export *
+
+  module * { export * }
+}
